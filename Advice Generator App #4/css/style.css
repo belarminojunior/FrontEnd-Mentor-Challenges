@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    /* PRIMARY */
+    --LIGHT-CYAN: hsl(193, 38%, 86%);
+    --NEON-GREEN: hsl(150, 100%, 66%);
+
+    /* NEUTRAL */
+    --GRAYISH-BLUE: hsl(217, 19%, 38%);
+    --DARK-GRAYISH-BLUE: hsl(217, 19%, 24%);
+    --DARK-BLUE: hsl(218, 23%, 16%);
+}
+
+body,
+.container,
+.advice,
+.advice>.advice-text,
+#dice {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--DARK-BLUE);
+}
+
+.advice {
+    width: 33.333vw;
+    max-width: 550px;
+    min-width: 375px;
+
+    height: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 50px #00000025;
+
+    background-color: var(--DARK-GRAYISH-BLUE);
+}
+
+.advice>.advice-id {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--NEON-GREEN);
+    margin-bottom: 15px;
+}
+
+.advice>.advice-text {
+    width: 100%;
+    height: 70%;
+
+    justify-content: center;
+    text-align: center;
+
+    color: var(--LIGHT-CYAN);
+    font-size: 28px;
+}
+
+.advice>.divider {
+    width: 100%;
+    height: 16px;
+    background-position-x: center;
+
+    background-image: url('../images/pattern-divider-desktop.svg');
+}
+
+#dice {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    justify-content: center;
+
+    border: none;
+    background-color: var(--NEON-GREEN);
+    position: relative;
+    bottom: 25px;
+    cursor: pointer;
+
+    transition: all .2s linear;
+}
+
+#dice:hover {
+    box-shadow: 0 0 25px var(--NEON-GREEN);
+}
+
+#dice > img {
+    width: 40%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--NEON-GREEN);
+}

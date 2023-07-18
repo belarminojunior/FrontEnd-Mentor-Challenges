@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRIMARY COLORS */
+    --PURPLE: hsl(259, 100%, 65%);
+    --LIGHT-RED: hsl(0, 100%, 67%);
+    
+
+    /* NEUTRAL COLORS */
+    --WHITE: hsl(0, 0%, 100%);
+    --OFF-WHITE: hsl(0, 0%, 94%);
+    --LIGHT-GREY: hsl(0, 0%, 86%);
+    --SMOKEY-GREY: hsl(0, 1%, 44%);
+    --OFF-BLACK: hsl(0, 0%, 8%);
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--LIGHT-GREY);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.content {
+    background-color: var(--WHITE);
+    width: 750px;
+    padding: 50px;
+    border-radius: 20px;
+    border-bottom-right-radius: 80px;
+    position: relative;
+}
+
+.input {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+input {
+    font-size: 2rem;
+    width: 150px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-right: 10px;
+    border: 0.5px solid var(--LIGHT-GREY);
+    outline: none;
+    letter-spacing: 2px;
+    caret-color: var(--PURPLE);
+
+    cursor: pointer;
+}
+
+input:focus, input:hover {
+    border: 0.5px solid var(--PURPLE);
+}
+
+h6 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--SMOKEY-GREY);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--LIGHT-GREY);
+}
+
+button {
+    position: absolute;
+    background-color: var(--PURPLE);
+    width: 65px;
+    height: 65px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    right: 50px;
+    margin-top: -32px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--OFF-BLACK);
+}
+
+p.error {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--LIGHT-RED);
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.result h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.result span {
+    color: var(--PURPLE);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* || RESPONSIVENESS */
+
+@media only screen and (max-width: 525px) {
+    .input {
+        margin-bottom: 40px;
+    }   
+
+    input {
+        font-size: 18px;
+        width: 80px;
+        position: relative;
+    }
+
+    .result h1 {
+        font-size: 2.7rem;
+    }
+
+    p.error {
+        font-size: 10px;
+    }
+
+    button {
+        right: 40%;
+    }
+
+    .result {
+        margin-top: 40px;
+    }
+}
