@@ -10,7 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/belarminojunior/QRCodeComponent)
+- Solution URL: [Solution URL](https://github.com/belarminojunior/Frontend-Mentor-Challenges)
 - Live URL: [Live URL](https://qrcode-challenge-wonderr.netlify.app/)
 
 ## My process
